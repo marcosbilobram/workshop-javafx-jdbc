@@ -54,8 +54,7 @@ public class DepartmentListController implements Initializable {
 		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
 		
 		Stage stage = (Stage) Main.getMainScene().getWindow();
-		tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());
-		
+		tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());	
 	}
 	
 	public void updateTableView() {
@@ -66,5 +65,4 @@ public class DepartmentListController implements Initializable {
 		obsList = FXCollections.observableArrayList(list);
 		tableViewDepartment.setItems(obsList);
 	}
-
 }

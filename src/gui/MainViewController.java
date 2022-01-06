@@ -74,5 +74,4 @@ public class MainViewController implements Initializable {
 			Alerts.showAlert("IO Exception", "Erroe loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}
-
 }
